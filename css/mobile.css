@@ -1,0 +1,25 @@
+@media (max-width: 600px){
+
+
+    .products{
+        display: inline-block;
+        height: auto;
+    }
+    .product{
+        margin-top: auto;
+    }
+    .main_section{
+        padding: 4%;
+        padding-top:20%;
+        font-size: 14px;
+    }
+    .beneficios, .menciones{
+        display: inherit;
+    }
+
+    .mencionesTitle{
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+
+}

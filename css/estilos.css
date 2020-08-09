@@ -57,12 +57,12 @@ nav li a:hover{
 
 .products{
     background-image: url("../images/curve.png");
-    max-height: 80px;
-    height: 100px;
-    background-size: cover;
+    padding: 15%;
     background-position: center top;
-    padding: 20%;
+    background-repeat: no-repeat;
     display: flex;
+    height: 95px;
+    background-size: cover;
 }
 
 .product{
@@ -96,21 +96,23 @@ nav li a:hover{
 }
 
 /* Sección de beneficios */
-.Tbeneficios{
+.beneficios{
     display: flex;
-    text-align: center;
-    padding: 5%;
-    margin-top: -60px;
-    justify-content: space-evenly;
+    padding: 10%;
 }
 
 .beneficio{
-    margin-top: 100px;
-    width: 175px;
+    text-align: center;
+    padding: 20px;
+}
+
+.text_beneficio{
+    text-align: justify;
 }
 
 .beneficio .contenido{ 
     background-color: var(--white-color);
+    text-align: center;
 }
 
 .beneficio .contenido h1{
@@ -126,42 +128,35 @@ nav li a:hover{
 }
 
 .img_content img{
-    margin-bottom: 30px;
-    width: 138px;
-    height: 113px;
+    max-width: 100px;
 }
 
 .contenido:hover{
     background-color: #F2F3F4;
 }
 
-.beneficio:hover{
-    background-color: var(--green-color);
-}
 
 /* Menciones */
 
 .mencionesTitle{
     text-align: center;
     margin-top: 55px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
-.imagnes_menciones{
-    width: 239px;
-    height: 105px;
+.menciones .mencion img{
+    width: 100%;
 }
 
 .menciones{
     display: flex;
-    justify-content: center;
+    padding: 5%;
 }
 
 .mencion{
-    width: 239px;
-    margin-left: 10px;
     margin-bottom: 5px;
     border-radius: 5px;
+    padding: var(--normal);
 }
 
 .mencion p{
@@ -187,12 +182,8 @@ nav li a:hover{
     background-color: #F2F3F4;
 }
 
-.mencion:hover{
-    background-color: var(--green-color);
-}
-
 footer{
-    background-color: black;
+    background-color: var(--black-color);
     padding: 20px;
     display: flex;
     justify-content: space-between;
