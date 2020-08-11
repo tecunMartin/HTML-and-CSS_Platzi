@@ -1,0 +1,105 @@
+:root{
+    --col-width:8.3333333333333333333333333333333%;
+    --margin-diff:100px;
+}
+
+nav{
+    margin-top: calc(var(--margin-diff)*-1);
+}
+
+body{
+    justify-content: center;
+}
+
+.container h1{
+    margin-left: 15%;
+    font-size: 30px;
+    margin-top: var(--margin-diff);
+}
+
+.container h3{
+    font-size: 18px;
+    text-align: LEFT;
+}
+
+.container{
+    background-color: red;
+    max-width: 900px;
+}
+
+.container img{
+    max-width: 200px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+.col-1{
+    width: var(--col-width);
+}
+
+.col-2{
+    width: calc(var(--col-width)*2);
+}
+
+.col-3{
+    width: calc(var(--col-width)*3);
+}
+
+.col-4{
+    width: calc(var(--col-width)*4);
+}
+
+.col-5{
+    width: calc(var(--col-width)*5);
+}
+
+.col-6{
+    width: calc(var(--col-width)*6);
+}
+
+.col-7{
+    width: calc(var(--col-width)*7);
+}
+
+.col-8{
+    width: calc(var(--col-width)*8);
+}
+
+.col-9{
+    width: calc(var(--col-width)*9);
+}
+
+.col-10{
+    width: calc(var(--col-width)*10);
+}
+
+.col-11{
+    width: calc(var(--col-width)*11);
+}
+
+.col-12{
+    width: calc(var(--col-width)*12);
+}
+
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    padding: 10px;
+}
+
+@media (max-width:900px){
+    .row{
+        display: grid;
+        text-align: left;
+    }
+    .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+        width: 95%;
+    }
+    .container h1{
+        text-align: center;
+        margin-left: -3%;
+        font-size: -30px;
+    }
+}
