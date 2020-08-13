@@ -1,30 +1,24 @@
 :root{
     --col-width:8.3333333333333333333333333333333%;
-    --margin-diff:100px;
+    --margin-diff:400px;
 }
 
 nav{
-    margin-top: calc(var(--margin-diff)*-1);
-}
-
-body{
-    justify-content: center;
+    margin-top: calc(var(--margin-diff) + todo);
 }
 
 .container h1{
-    margin-left: 15%;
     font-size: 30px;
-    margin-top: var(--margin-diff);
 }
 
 .container h3{
-    font-size: 18px;
-    text-align: LEFT;
+    font-size: 20px;
+    text-align: left;
 }
 
 .container{
-    background-color: red;
     max-width: 900px;
+    padding: 0px 0px 0px 0px;
 }
 
 .container img{
@@ -32,8 +26,9 @@ body{
 }
 
 .row{
-    display: flex;
     align-items: center;
+    display: flex;
+    width: 100%;
     padding: 3%;
 }
 
@@ -92,14 +87,28 @@ body{
 @media (max-width:900px){
     .row{
         display: grid;
-        text-align: left;
     }
     .col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
-        width: 95%;
+        width:  90%;
     }
+    
+    #CambioCol8{
+        grid-row: 2;
+    }
+
+    #cambioCol4{
+        grid-row: 1;
+    }
+    
     .container h1{
         text-align: center;
-        margin-left: -3%;
+        margin-left: -25%;
         font-size: -30px;
+    }
+    .container{
+        max-width: 400px;
+    }
+    footer{
+        width: 100%;
     }
 }
