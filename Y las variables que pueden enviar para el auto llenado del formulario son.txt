@@ -1,0 +1,1 @@
+https://developer.paypal.com/docs/paypal-payments-standard/integration-guide/Appx-websitestandard-htmlvariables/#paypal-checkout-page-variables
